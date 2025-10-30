@@ -1,5 +1,8 @@
 from flask import Flask, Response, jsonify, render_template, redirect
 
+import sys
+import os
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from util import spotify
 
 app = Flask(__name__)
